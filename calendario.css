@@ -1,0 +1,62 @@
+
+.calendario {
+	margin: 8px 0;
+  width: 378px;
+  height: 300px;
+  color: #fff;
+  background-color: #657361;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .calendario{
+    width: 511px;
+  }
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 1px solid #ccc;
+}
+
+.day-name,
+.day {
+  border: 1px solid #ccc;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.day-name {
+  background-color: #ebe5e1;
+  font-weight: bold;
+  color: #444;
+}
+
+.day.empty {
+  background-color: #aaafad;
+  border: 1px solid #eee;
+  pointer-events: none;
+}
+.today {
+  background-color: #2a3b2f;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}

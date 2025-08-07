@@ -1,0 +1,89 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #d2d1ce;
+  font-family: cambria;
+  a{
+    color: #fff;
+    border-radius: 5px;
+  }
+  ul{
+      padding: 9px 0;
+  }
+}
+
+.ventana{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  
+}
+@media only screen and (max-width: 1400px) {
+  .ventana{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .ventana{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+
+.titulo-pagina{
+  text-align: center;
+  background-color: #481d19;
+  color: #fff;
+  width: 550px;
+  margin: 8px 0;
+  height: 80px;
+  border-radius: 5px;
+  padding: 10px 0 0 0;
+}
+
+
+.materias{
+  color: #fff;
+  background-color: #786255;
+  font-size: 23px;
+  text-align: left;
+  padding: 28px 20px;
+  margin-top: 8px;
+  border-radius: 5px;
+  display: flex;
+  a{
+    background-color: #33272a;
+    margin-left: 5vh;
+    padding: 4px;
+  }
+}
+
+.horario{
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  width: 550px;
+  a{
+    background-color: #001e36;
+    padding: 3px;
+  }
+  .asignatura{
+    h3{
+      padding: 1px 0;
+    }
+    background-color: #15516b;
+    padding: 13.5px 0;
+    border-radius: 5px;
+    margin-top: 8px;
+  }
+}
+

@@ -1,0 +1,50 @@
+.sitio-1{
+  text-align: center;
+  background-color: #646990;
+  color: #fff;
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+  ul{
+    font-size: 20px;
+  }
+  padding-bottom: 5px;
+}
+
+.sitio-1_webs{  
+  li{
+    display: block;
+    font-size: 17px;
+    background-color: #2c2f41;
+    border-radius: 5px;
+    margin: 8px 10px;
+    margin-top: 0;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.sitio-2{
+  text-align: center;
+  background-color: #7d4a52;
+  color: #fff;
+  width: 50%;
+  border-radius: 5px;
+  ul{
+    font-size: 20px;
+  }
+  padding-bottom: 5px;
+}
+
+.sitio-2_webs{  
+  li{
+    display: block;
+    font-size: 17px;
+    background-color: #d08190;
+    margin: 8px 10px;
+    margin-top: 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+}

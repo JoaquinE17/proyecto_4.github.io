@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Horarios de cursada</title>
+  	<link rel="stylesheet" href="horarios.css">
+	 <link rel="stylesheet" href="calendario.css">
+	 <link rel="stylesheet" href="semana.css">
+	 <link rel="stylesheet" href="webs.css">
+</head>
+<body>
+	<div class="ventana">
+		<section>
+			<div class="titulo-pagina">
+				<h1>Carrera: Licenciatura en Sistemas</h1>
+				<h2>Segundo cuatrimestre</h2>
+			</div>
+			<div class="materias">
+				<div >
+					<ul>Programacion II</ul> 
+					<ul>Estructura de datos</ul>
+					<ul>Organizacion de Computadoras</ul>
+					<ul>Laboratorio de S.O (APU)</ul>
+				</div>
+				<div>
+					<ul><a href="https://virtual.unju.edu.ar/enrol/index.php?id=1653" target="_blank">Aula virtual</a></ul>
+					<ul><a href="https://virtual.unju.edu.ar/enrol/index.php?id=2496" target="_blank">Aula virtual</a></ul>
+					<ul><a href="https://virtual.unju.edu.ar/enrol/index.php?id=2949" target="_blank">Aula virtual</a></ul>
+					<ul><a href="https://virtual.unju.edu.ar/enrol/index.php?id=2515" target="_blank">Aula virtual</a></ul>
+				</div>
+			</div>
+			<div class="dias-habiles">
+			    <div class="dia">
+			      <div class="nombre-dia">Lunes</div>
+			      <div class="cuadro" id="cuadro"></div>
+			      <div class="cuadro" id="cuadro">T/OC</div>
+			      <div class="cuadro" id="cuadro"></div>
+			      <div class="cuadro" id="cuadro"></div>
+			      <div class="cuadro" id="cuadro">T/ED</div>
+			    </div>
+			
+			    <div class="dia">
+			      <div class="nombre-dia">Martes</div>
+			      <div class="cuadro">T/Pr</div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro">T/LSO</div>
+			      <div class="cuadro"></div>
+			    </div>
+			
+			    <div class="dia">
+			      <div class="nombre-dia">Miércoles</div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro">P/LSO</div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro"></div>
+			    </div>
+			
+			    <div class="dia">
+			      <div class="nombre-dia">Jueves</div>
+			      <div class="cuadro">P/Pr</div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro">P/OC</div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro"></div>
+			    </div>
+			
+			    <div class="dia">
+			      <div class="nombre-dia">Viernes</div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro">P/ED</div>
+			      <div class="cuadro"></div>
+			    </div>
+			
+			    <div class="dia">
+			      <div class="nombre-dia">Sábado</div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro"></div>
+			      <div class="cuadro"></div>
+			    </div>
+			</div>
+
+			<script>
+				  let cuadros = document.querySelectorAll('.cuadro');
+				  cuadros.forEach(cuadro => {
+				    if (cuadro.innerHTML.includes('/')) {
+				      cuadro.style.backgroundColor = "#738091";
+				    }
+				  });
+			</script>
+		</section>
+		
+		<section>
+			<div class="horario">
+				<div class="asignatura">
+					<h3>Programacion II</h3>
+					<ul>Martes 09:00 a 11:00. Aula 30</ul>
+					<ul>Jueves 09:00 a 11:00. Aula 30</ul>
+				</div>
+				<div class="asignatura">
+					<h3>Estructura de datos</h3>
+					<ul>Teorico: Lunes 19:00 a 22:00. Aula <a href="https://bit.ly/AULA-12" target="_blank">Zoom</a></ul>
+					<ul>Practico: Viernes 17:00 a 20:00. Aula 18</ul>
+				</div>
+				<div class="asignatura">
+					<h3>Organizacion de Computadoras</h3>
+					<ul>Teorico: Lunes 13:00 a 16:00. Aula <a href="https://bit.ly/SALON-6" target="_blank">Zoom</a></ul>
+					<ul>Practico: Jueves 15:30 a 18:30. Aula <a href="https://bit.ly/SALON-6" target="_blank">Zoom</a></ul>
+				</div>
+				<div class="asignatura">
+					<h3>Laboratorio de Sistemas Operativos</h3>
+					<ul>Teorico: Martes 18:30 a 20:30. Aula <a href="https://bit.ly/SALON-6" target="_blank">Zoom</a></ul>
+					<ul>Practico: Miercoles 11:00 a 14:00. Aula <a href="https://bit.ly/LABORATORIO-4" target="_blank">Zoom</a></ul>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="calendario">
+	   			<div class="header" id="monthYear"></div>
+	   			<div class="grid" id="calendarGrid"></div>
+	 		</div>
+	 		<script src="calendario.js"></script>
+
+	 		<div style="display: flex; align-items: flex-start; gap: 8px;">
+	 			<div class="sitio-1">
+					<ul>Sitios webs</ul>
+					<div class="sitio-1_webs">
+						<a href="https://virtual.unju.edu.ar/" target="_blank	"><li>Unju Virtual</li></a>
+						<a href="https://alumnos.unju.edu.ar/unju/" target="	_blank"><li>SIU Guarani</li></a>
+						<a href="https://gimnasio.unju.edu.ar/web/" target="	_blank"><li>Unju GYM</li></a>
+						<a href="https://www.fi.unju.edu.ar/" target="_blank"	><li>Facultad de Ing.</li></a>
+		 			</div>
+		 		</div>
+		 		<div class="sitio-2">
+					<ul>Dist. Horaria</ul>
+					<div class="sitio-2_webs">
+						<li>6h</li>
+						<li>6h</li>
+						<li>6h</li>
+						<li>6h Descanso..</li>
+		 			</div>
+		 		</div>
+	 		</div>
+		</section>
+	</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
