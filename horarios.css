@@ -56,13 +56,13 @@ body{
   background-color: #786255;
   font-size: 23px;
   text-align: left;
-  padding: 28px 20px;
+  padding: 25px 20px;
   margin-top: 8px;
   border-radius: 5px;
   display: flex;
   a{
     background-color: #33272a;
-    margin-left: 5vh;
+    margin-left: 6vh;
     padding: 4px;
   }
 }
@@ -81,7 +81,7 @@ body{
       padding: 1px 0;
     }
     background-color: #15516b;
-    padding: 13.5px 0;
+    padding: 13px 0;
     border-radius: 5px;
     margin-top: 8px;
   }
