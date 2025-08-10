@@ -8,6 +8,7 @@
 	 <link rel="stylesheet" href="calendario.css">
 	 <link rel="stylesheet" href="semana.css">
 	 <link rel="stylesheet" href="webs.css">
+	 <link rel="stylesheet" href="horaSema.css">
 </head>
 <body>
 	<div class="ventana">
@@ -94,6 +95,113 @@
 				    }
 				  });
 			</script>
+			<div class="alfa" style="padding-bottom: 15px;">
+    			<h2 style="color:#fff; padding: 7px 0; font-weight: bold; font-size: 20px;">Grilla de Horarios Semanal</h2>
+    			<div style="font-size: 18px;">
+	    			<div class="rejas">  
+				      <div class="horas1">
+				        <div class="header1" style="background-color : #212424;">Lu</div>
+				        <div class="header1">08</div>
+				        <div class="header1">09</div>
+				        <div class="header1">10</div>
+				        <div class="header1">11</div>
+				        <div class="header1">12</div>
+				        <div class="header1">13</div>
+				        <div class="header1">14</div>
+				        <div class="header1">15</div>
+				        <div class="header1">16</div>
+				        <div class="header1">17</div>
+				        <div class="header1">18</div>
+				        <div class="header1">19</div>
+				        <div class="header1">20</div>
+				        <div class="header1">21</div>
+				        <div class="header1">22</div>
+				      </div>
+				      <div class="horas1">
+				        <div class="header1"style="background-color : #212424;">Ma</div>
+				        <div class="header1">08</div>
+				        <div class="header1">09</div>
+				        <div class="header1">10</div>
+				        <div class="header1">11</div>
+				        <div class="header1">12</div>
+				        <div class="header1">13</div>
+				        <div class="header1">14</div>
+				        <div class="header1">15</div>
+				        <div class="header1">16</div>
+				        <div class="header1">17</div>
+				        <div class="header1">18</div>
+				        <div class="header1">19</div>
+				        <div class="header1">20</div>
+				        <div class="header1">21</div>
+				        <div class="header1">22</div>
+				      </div>
+				      <div class="horas1">
+				        <div class="header1"style="background-color : #212424;">Mi</div>
+				        <div class="header1">08</div>
+				        <div class="header1">09</div>
+				        <div class="header1">10</div>
+				        <div class="header1">11</div>
+				        <div class="header1">12</div>
+				        <div class="header1">13</div>
+				        <div class="header1">14</div>
+				        <div class="header1">15</div>
+				        <div class="header1">16</div>
+				        <div class="header1">17</div>
+				        <div class="header1">18</div>
+				        <div class="header1">19</div>
+				        <div class="header1">20</div>
+				        <div class="header1">21</div>
+				        <div class="header1">22</div>
+				      </div>
+				      <div class="horas1">
+				        <div class="header1"style="background-color : #212424;">Ju</div>
+				        <div class="header1">08</div>
+				        <div class="header1">09</div>
+				        <div class="header1">10</div>
+				        <div class="header1">11</div>
+				        <div class="header1">12</div>
+				        <div class="header1">13</div>
+				        <div class="header1">14</div>
+				        <div class="header1">15</div>
+				        <div class="header1">16</div>
+				        <div class="header1">17</div>
+				        <div class="header1">18</div>
+				        <div class="header1">19</div>
+				        <div class="header1">20</div>
+				        <div class="header1">21</div>
+				        <div class="header1">22</div>
+				      </div>
+				      <div class="horas1">
+				        <div class="header1"style="background-color : #212424;">Vi</div>
+				        <div class="header1">08</div>
+				        <div class="header1">09</div>
+				        <div class="header1">10</div>
+				        <div class="header1">11</div>
+				        <div class="header1">12</div>
+				        <div class="header1">13</div>
+				        <div class="header1">14</div>
+				        <div class="header1">15</div>
+				        <div class="header1">16</div>
+				        <div class="header1">17</div>
+				        <div class="header1">18</div>
+				        <div class="header1">19</div>
+				        <div class="header1">20</div>
+				        <div class="header1">21</div>
+				        <div class="header1">22</div>
+				      </div>
+				    </div>
+				    <div class="celdas" style="position: absolute; bottom:15px; width: 473px; margin-left: 32px;">
+				       <div class="grid-container-lun"></div>
+				       <div class="grid-container-lun-aux"></div> 
+				       <div class="grid-container-mar"></div> 
+				       <div class="grid-container-mar-aux"></div> 
+				       <div class="grid-container-mie"></div>
+				       <div class="grid-container-jue"></div> 
+				       <div class="grid-container-jue-aux"></div> 
+				       <div class="grid-container-vie"></div>
+				    </div>
+				</div>
+			</div>
 		</section>
 		
 		<section>
@@ -123,7 +231,7 @@
 
 		<section>
 			<div class="calendario">
-	   			<div class="header" id="monthYear"></div>
+	   			<div class="headers" id="monthYear"></div>
 	   			<div class="grid" id="calendarGrid"></div>
 	 		</div>
 	 		<script src="calendario.js"></script>

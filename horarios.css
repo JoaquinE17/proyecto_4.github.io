@@ -44,10 +44,9 @@ body{
   background-color: #481d19;
   color: #fff;
   width: 550px;
-  margin: 8px 0;
-  height: 80px;
+  margin: 8px 0 0 0;
   border-radius: 5px;
-  padding: 10px 0 0 0;
+  padding: 10px 0;
 }
 
 
@@ -56,7 +55,7 @@ body{
   background-color: #786255;
   font-size: 23px;
   text-align: left;
-  padding: 25px 20px;
+  padding: 15px 20px;
   margin-top: 8px;
   border-radius: 5px;
   display: flex;
@@ -81,7 +80,7 @@ body{
       padding: 1px 0;
     }
     background-color: #15516b;
-    padding: 13px 0;
+    padding: 12px 0;
     border-radius: 5px;
     margin-top: 8px;
   }
