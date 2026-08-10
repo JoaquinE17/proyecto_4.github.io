@@ -22,3 +22,7 @@
 - Asignatura 7 -> #07DF78
 - Asignatura 8 -> #AF3909
 - Asignatura 9 -> #29903A
+
+## Feedback
+- [a => cerrar(modales)] -> Enserrarlo en un div.
+- [Problema: Cerrar modal] -> Al cerrar la modal se recarga la pagina.
